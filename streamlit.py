@@ -15,7 +15,8 @@ from typing import List, Dict
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-songs = pd.read_csv('https://raw.githubusercontent.com/ugis22/music_recommender/master/content%20based%20recommedation%20system/songdata.csv')
+# songs = pd.read_csv('https://raw.githubusercontent.com/ugis22/music_recommender/master/content%20based%20recommedation%20system/songdata.csv')
+songs = pd.read_csv('songdata.csv')
 
 # from google.colab import drive
 # drive.mount('/content/drive/MyDrive/Music_Recommender_System/songdata.csv')
@@ -78,4 +79,4 @@ recommendation2 = {
     "number_songs": 4 
 }
 
-recommedations.recommend(recommendation2)
+# recommedations.recommend(recommendation2)
