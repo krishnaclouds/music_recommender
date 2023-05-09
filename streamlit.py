@@ -9,11 +9,14 @@ Original file is located at
 
 import numpy as np
 import pandas as pd
+import streamlit as st
 
 from typing import List, Dict
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
+st.title('Music Recommender System') 
 
 songs = pd.read_csv('https://raw.githubusercontent.com/ugis22/music_recommender/master/content%20based%20recommedation%20system/songdata.csv')
 # songs = pd.read_csv('songdata.csv')
